@@ -1,9 +1,12 @@
 {
   "name": "slack-codebuild",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send AWS CodeBuild status messages to Slack via an Incoming WebHook.",
   "bin": {
     "slack-codebuild": "./src/index.js"
+  },
+  "scripts": {
+    "test": "eslint src"
   },
   "repository": "https://github.com/ChrisAckerman/slack-codebuild.git",
   "author": "Chris Ackerman <chris@topher.land>",

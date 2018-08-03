@@ -14,7 +14,7 @@ async function main() {
     const link = `${CODEBUILD_URL_BASE}?region=${process.env.AWS_REGION}#/builds/${process.env.CODEBUILD_BUILD_ID}/view/new`;
     const success = R.defaultTo("", process.env.CODEBUILD_BUILD_SUCCEEDING) === "1";
 
-    await got(options.url, {
+    await got(url, {
         method: "POST",
         body: JSON.stringify({
             attachments: [
