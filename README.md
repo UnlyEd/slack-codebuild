@@ -15,7 +15,7 @@ Example `buildspec.yml` file:
 ```yaml
 env:
   parameter-store:
-    SLACK_WEBHOOK_URL: MY_SYSTEMS_MANAGER_PARAMETER
+    SLACK_WEBHOOK_URL: /CodeBuild/MyProject/SlackWebHookUrl
     
 phases:
   install:

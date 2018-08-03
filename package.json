@@ -1,6 +1,6 @@
 {
   "name": "slack-codebuild",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Send AWS CodeBuild status messages to Slack via an Incoming WebHook.",
   "bin": {
     "slack-codebuild": "./src/index.js"
