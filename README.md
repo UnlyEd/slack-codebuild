@@ -37,16 +37,16 @@ The Incoming WebHook URL where messages will be posted
 
 The AWS region where the build is running.
 
-_This automatically variable is provided by CodeBuild._
+_This variable is automatically provided by CodeBuild._
 
 ### `CODEBUILD_BUILD_ID`
 
 The AWS CodeBuild ID of the build.
 
-_This automatically variable is provided by CodeBuild._
+_This variable is automatically provided by CodeBuild._
 
 ### `CODEBUILD_BUILD_SUCCEEDING`
 
 Whether the current build is succeeding. Set to 0 if the build is failing, or 1 if the build is succeeding.
 
-_This automatically variable is provided by CodeBuild._
+_This variable is automatically provided by CodeBuild._
