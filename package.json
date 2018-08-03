@@ -1,0 +1,9 @@
+{
+  "name": "slack-webhook-codebuild",
+  "version": "1.0.0",
+  "description": "Send AWS CodeBuild status messages to Slack Incoming WebHook.",
+  "main": "index.js",
+  "repository": "git@github.com:ChrisAckerman/slack-webhook-codebuild.git",
+  "author": "Chris Ackerman <chris@topher.land>",
+  "license": "MIT"
+}
