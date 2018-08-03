@@ -22,13 +22,7 @@ async function main() {
                     fallback: success ? "Build success!" : "Build failure.",
                     title: `${success ? "Succeeded" : "Failed"} building project "${project}"`,
                     title_link: link,
-                    color: success ? "good" : "danger",
-                    fields: [
-                        {
-                            title: "Version",
-                            value: process.env.CODEBUILD_SOURCE_VERSION
-                        }
-                    ]
+                    color: success ? "good" : "danger"
                 }
             ]
         })

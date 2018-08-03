@@ -5,9 +5,18 @@ Send AWS CodeBuild status messages to Slack via an
 
 ## Getting Started
 
-This utility is designed to be run as part of a CodeBuild project.
+This utility is designed to be used in an [AWS CodeBuild](https://console.aws.amazon.com/codebuild/home) project.
 
+_Storing the `SLACK_WEBHOOK_URL` environment variable value in your
+[AWS Systems Manager Parameter Store](https://console.aws.amazon.com/systems-manager/parameters) is strongly
+recommended._
+
+Example `buildspec.yml` file:
 ```yaml
+env:
+  parameter-store:
+    SLACK_WEBHOOK_URL: MY_SYSTEMS_MANAGER_PARAMETER
+    
 phases:
   install:
     commands:
@@ -24,8 +33,6 @@ phases:
 The Incoming WebHook URL where messages will be posted
 (e.g. `https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX`)
 
-Set this variable in the advanced settings of your [CodeBuild](https://console.aws.amazon.com/codebuild/home) project.
-
 ### `AWS_REGION`
 
 The AWS region where the build is running.
@@ -35,14 +42,6 @@ _This automatically variable is provided by CodeBuild._
 ### `CODEBUILD_BUILD_ID`
 
 The AWS CodeBuild ID of the build.
-
-_This automatically variable is provided by CodeBuild._
-
-### `CODEBUILD_RESOLVED_SOURCE_VERSION`
-
-For builds run by AWS CodePipeline, the commit ID or Amazon S3 version ID of the source code to be built. Note that
-this value is available only if the pipeline's related Source action is based on an Amazon S3, AWS CodeCommit, or
-GitHub repository.
 
 _This automatically variable is provided by CodeBuild._
 
