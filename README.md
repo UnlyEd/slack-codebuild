@@ -16,6 +16,7 @@ Example `buildspec.yml` file:
 env:
   parameter-store:
     SLACK_WEBHOOK_URL: /CodeBuild/MyProject/SlackWebHookUrl
+    CODEBUILD_NOTIFY_ONLY_IF_FAIL: 1
     
 phases:
   install:
@@ -48,5 +49,9 @@ _This variable is automatically provided by CodeBuild._
 ### `CODEBUILD_BUILD_SUCCEEDING`
 
 Whether the current build is succeeding. Set to 0 if the build is failing, or 1 if the build is succeeding.
+
+### `CODEBUILD_NOTIFY_ONLY_IF_FAIL`
+
+Set to 0 if you want to be notify whatever, or 1 only on failure. Default set to 0
 
 _This variable is automatically provided by CodeBuild._

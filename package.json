@@ -1,21 +1,36 @@
 {
-  "name": "slack-codebuild",
-  "version": "1.1.2",
+  "name": "@unly/slack-codebuild",
+  "version": "1.1.3",
   "description": "Send AWS CodeBuild status messages to Slack via an Incoming WebHook.",
   "bin": {
-    "slack-codebuild": "./src/index.js"
+    "slack-codebuild": "yarn start"
   },
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
   "scripts": {
-    "test": "eslint src"
+    "build": "npx tsc"
   },
-  "repository": "https://github.com/ChrisAckerman/slack-codebuild.git",
-  "author": "Chris Ackerman <chris@topher.land>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/UnlyEd/slack-codebuild.git"
+  },
+  "author": "Hugo MARTIN <hugo.martin@studylink.fr>",
   "license": "MIT",
   "dependencies": {
+    "esm": "3.2.25",
     "got": "^8.3.2",
     "ramda": "^0.25.0"
   },
   "devDependencies": {
-    "eslint": "^5.2.0"
-  }
+    "@types/got": "9.6.0",
+    "@types/ramda": "0.26.14",
+    "dotenv": "8.0.0",
+    "eslint": "^5.2.0",
+    "typescript": "3.5.2"
+  },
+  "bugs": {
+    "url": "https://github.com/ChrisAckerman/slack-codebuild/issues"
+  },
+  "homepage": "https://github.com/UnlyEd/slack-codebuild#readme",
+  "keywords": []
 }
