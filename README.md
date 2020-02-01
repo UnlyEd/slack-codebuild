@@ -1,4 +1,6 @@
 <a href="https://unly.org"><img src="https://storage.googleapis.com/unly/images/ICON_UNLY.png" align="right" height="20" alt="Unly logo" title="Unly logo" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/e2ae5f9d310182aae196/maintainability)](https://codeclimate.com/github/UnlyEd/slack-codebuild/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/e2ae5f9d310182aae196/test_coverage)](https://codeclimate.com/github/UnlyEd/slack-codebuild/test_coverage)
 [![Known Vulnerabilities](https://snyk.io/test/github/UnlyEd/slack-codebuild/badge.svg?targetFile=package.json)](https://snyk.io/test/github/UnlyEd/slack-codebuild?targetFile=package.json)
 
 # slack-codebuild
